@@ -9,6 +9,7 @@ import { MathBackdrop } from "@/components/MathBackdrop";
 import { WhatsAppFloat, WHATSAPP_URL } from "@/components/WhatsAppFloat";
 import { BookingForm } from "@/components/BookingForm";
 import { AssessmentModal } from "@/components/AssessmentModal";
+import { DemoPopup } from "@/components/DemoPopup";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -98,6 +99,7 @@ function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <WhatsAppFloat />
+      <DemoPopup />
       <AssessmentModal open={assessOpen} onClose={() => setAssessOpen(false)} />
 
       {/* NAV */}
@@ -197,8 +199,9 @@ function Home() {
       </section>
 
       {/* COURSES */}
-      <section id="courses" className="relative py-20 md:py-28 bg-secondary/40">
+      <section id="courses" className="relative py-20 md:py-28 bg-secondary/40 overflow-hidden">
         <div className="absolute inset-0 math-dot-bg opacity-40" aria-hidden />
+        <MathBackdrop className="opacity-70" />
         <div className="relative mx-auto max-w-6xl px-4">
           <SectionHeader eyebrow="Courses" title="Subjects I Teach" sub="Full coverage from middle school to advanced high school and AP." />
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -221,8 +224,9 @@ function Home() {
       </section>
 
       {/* WHY */}
-      <section id="why" className="relative py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-4">
+      <section id="why" className="relative py-20 md:py-28 overflow-hidden">
+        <MathBackdrop className="opacity-60" />
+        <div className="relative mx-auto max-w-6xl px-4">
           <SectionHeader eyebrow="Why Choose Me" title="A teaching style parents trust" sub="Built around how students actually learn — and how exams actually test." />
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {REASONS.map((r) => (
@@ -249,8 +253,9 @@ function Home() {
       </section>
 
       {/* HOW */}
-      <section id="how" className="relative py-20 md:py-28 bg-secondary/40">
+      <section id="how" className="relative py-20 md:py-28 bg-secondary/40 overflow-hidden">
         <div className="absolute inset-0 math-grid-bg opacity-50" aria-hidden />
+        <MathBackdrop className="opacity-70" />
         <div className="relative mx-auto max-w-6xl px-4">
           <SectionHeader eyebrow="How Classes Work" title="A simple, structured path to results" />
           <div className="mt-12 grid md:grid-cols-4 gap-5">
@@ -269,8 +274,9 @@ function Home() {
       </section>
 
       {/* TESTIMONIALS */}
-      <section className="py-20 md:py-28">
-        <div className="mx-auto max-w-6xl px-4">
+      <section className="relative py-20 md:py-28 overflow-hidden">
+        <MathBackdrop className="opacity-50" />
+        <div className="relative mx-auto max-w-6xl px-4">
           <SectionHeader eyebrow="Parents & Students" title="What families are saying" />
           <div className="mt-12 grid md:grid-cols-2 gap-5">
             {TESTIMONIALS.map((t) => (
@@ -312,8 +318,9 @@ function Home() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-20 md:py-28">
-        <div className="mx-auto max-w-3xl px-4">
+      <section id="faq" className="relative py-20 md:py-28 overflow-hidden">
+        <MathBackdrop className="opacity-50" />
+        <div className="relative mx-auto max-w-3xl px-4">
           <SectionHeader eyebrow="FAQ" title="Frequently asked questions" />
           <div className="mt-10 divide-y divide-border rounded-2xl border border-border bg-card overflow-hidden">
             {FAQS.map((f, i) => {
