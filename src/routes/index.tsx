@@ -65,8 +65,8 @@ const REASONS = [
 
 const STATS = [
   { value: "7+", label: "Years Teaching" },
-  { value: "1000+", label: "Classes Delivered" },
-  { value: "USA", label: "Students Worldwide" },
+  { value: "5000+", label: "Classes Delivered" },
+  { value: "USA & Canada", label: "Students Worldwide" },
   { value: "24/7", label: "Flexible Timing" },
 ];
 
