@@ -78,10 +78,10 @@ const STEPS = [
 ];
 
 const TESTIMONIALS = [
-  { name: "Jennifer M.", role: "Parent of 10th grader", course: "Algebra II", quote: "My daughter went from a C+ to an A in one semester. Saurabh explains concepts so clearly that she actually enjoys math now." },
-  { name: "David R.", role: "Parent of 12th grader", course: "AP Calculus BC", quote: "Scored a 5 on the AP exam. The structured pacing and weekly mock tests made a huge difference." },
-  { name: "Priya S.", role: "Parent of 8th grader", course: "Pre-Algebra", quote: "Patient, kind, and incredibly knowledgeable. The personalized plan helped my son catch up and get ahead." },
-  { name: "Michael T.", role: "Parent of 11th grader", course: "SAT Math Prep", quote: "Went from 620 to 760 in three months. The strategies are gold." },
+  { name: "Vishal Agrwal", role: "Parent of 10th grader", course: "Algebra II", quote: "My daughter went from a C+ to an A in one semester. Saurabh explains concepts so clearly that she actually enjoys math now." },
+  { name: "Nirmaliya Ganguli", role: "Parent of 12th grader", course: "AP Calculus BC", quote: "Scored a 5 on the AP exam. The structured pacing and weekly mock tests made a huge difference." },
+  { name: " Bala Gaddam", role: "Parent of 8th grader", course: "Pre-Algebra", quote: "Patient, kind, and incredibly knowledgeable. The personalized plan helped my son catch up and get ahead." },
+  { name: "Rakesh Gupta", role: "Parent of 11th grader", course: "SAT Math Prep", quote: "Went from 620 to 760 in three months. The strategies are gold." },
 ];
 
 const FAQS = [
